@@ -142,7 +142,7 @@ function App() {
   const delProduct = async (id) => {
     try {
       const response = await axios.delete(
-        `${API_BASE}/api /${API_PATH}/admin/product/${id}`,
+        `${API_BASE}/api/${API_PATH}/admin/product/${id}`,
       );
       console.log(response.data);
       getProducts();
